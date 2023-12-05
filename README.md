@@ -1,5 +1,7 @@
-![Thumbnail GitHub](https://github.com/giovannamoeller/ios-view-code-requisicoes-http/assets/47362960/5994a6f5-0d05-4f24-9050-9923ff1aed94)
+![Mobile-iOS_com_ViewCode__1](https://github.com/AndriuCoelho/3482-ios-view-code-uicollectionview-cinetopia/assets/7536739/829d79c2-c8de-452d-8b9f-fb84aac79ab5)
 
+
+![](https://img.shields.io/github/license/alura-cursos/android-com-kotlin-personalizando-ui)
 
 # Cinetopia
 
@@ -52,4 +54,4 @@ Para rodar o seu projeto, você deve clicar no botão de play na parte superior 
 
 ## 📚 Mais informações do curso
 
-Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://cursos.alura.com.br/course/ios-view-code-requisicoes-http) que desenvolve o projeto!
+Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://cursos.alura.com.br/course/layouts-complexos-com-colecoes) que desenvolve o projeto!
