@@ -8,6 +8,10 @@
 import UIKit
 import Kingfisher
 
+protocol MovieTableViewCellDelegate: AnyObject {
+    func didSelectFavoriteButton(sender: UIButton)
+}
+
 class MovieTableViewCell: UITableViewCell {
     
     private lazy var moviePosterImageView: UIImageView = {
@@ -41,10 +45,12 @@ class MovieTableViewCell: UITableViewCell {
         button.translatesAutoresizingMaskIntoConstraints = false
         let iconImage = UIImage(systemName: "heart")?.withTintColor(.buttonBackground, renderingMode: .alwaysOriginal)
         button.setImage(iconImage, for: .normal)
-//        button.addTarget(self, action: #selector(didTapFavoriteButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapFavoriteButton), for: .touchUpInside)
         
         return button
     }()
+    
+    weak var delegate: MovieTableViewCellDelegate?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -66,7 +72,7 @@ class MovieTableViewCell: UITableViewCell {
         let heart = UIImage(systemName: "heart")?.withTintColor(.buttonBackground, renderingMode: .alwaysOriginal)
         let heartFill = UIImage(systemName: "heart.fill")?.withTintColor(.buttonBackground, renderingMode: .alwaysOriginal)
         
-        if movie.isSelected {
+        if movie.isSelected ?? false {
             favoriteButton.setImage(heartFill, for: .normal)
         } else {
             favoriteButton.setImage(heart, for: .normal)
@@ -77,7 +83,7 @@ class MovieTableViewCell: UITableViewCell {
         addSubview(moviePosterImageView)
         addSubview(movieTitleLabel)
         addSubview(movieReleaseDateLabel)
-        addSubview(favoriteButton)
+        contentView.addSubview(favoriteButton)
     }
     
     private func setupConstraints() {
@@ -110,6 +116,13 @@ class MovieTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
+    }
+    
+    // MARK: - Actions
+    
+    @objc
+    func didTapFavoriteButton(sender: UIButton) {
+        delegate?.didSelectFavoriteButton(sender: sender)
     }
     
 }
