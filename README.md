@@ -1,5 +1,5 @@
+![Mobile-iOS_com_ViewCode__1](https://github.com/AndriuCoelho/3482-ios-view-code-uicollectionview-cinetopia/assets/7536739/829d79c2-c8de-452d-8b9f-fb84aac79ab5)
 
-![Descricao da sua imagem](https://raw.githubusercontent.com/andreocunha/upload_files_test/main/exemplo-thumb.png)
 
 ![](https://img.shields.io/github/license/alura-cursos/android-com-kotlin-personalizando-ui)
 
