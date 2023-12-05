@@ -1,55 +1,56 @@
-![Thumbnail GitHub](https://github.com/giovannamoeller/ios-view-code-requisicoes-http/assets/47362960/5994a6f5-0d05-4f24-9050-9923ff1aed94)
 
+![Descricao da sua imagem](https://raw.githubusercontent.com/andreocunha/upload_files_test/main/exemplo-thumb.png)
 
-# Cinetopia
+![](https://img.shields.io/github/license/alura-cursos/android-com-kotlin-personalizando-ui)
 
-A aplicação Cinetopia é um aplicativo iOS que exibe a lista de filmes com maior arrecadação de bilheteria dos últimos tempos, utilizando a linguagem Swift e o framework UIKit, com a abordagem programática (view code).
+# Titulo do projeto
+
+App de simulação de um e-commerce para produtos naturais para o curso de personalização de UI no Android com Kotlin.
 
 ## 🔨 Funcionalidades do projeto
 
-- Listagem dos filmes com maior arrecadação de bilheteria dos últimos tempos;
-- Exibição detalhada de um filme;
-- Filtragem dos filmes de acordo com a busca do usuário;
-- Favoritar/desfavoritar um filme.
+O App lista produtos com imagem, título, descrição e valor. Também, é possível cadastrar produtos. Todo armazenamento é mantido em memória do App, portanto, ao finalizar o App as informações são perdidas.
 
-## ✔️ Técnicas e tecnologias
+![](img/amostra.gif)
 
-**Veja abaixo o que utilizamos nesse projeto**:
-- UIKit: Framework para construção de interfaces de usuário;
-- XCode: Ambiente de desenvolvimento integrado (IDE) oficial da Apple para desenvolvimento de aplicativos iOS;
-- Swift: Linguagem de programação poderosa e intuitiva usada para desenvolver aplicativos iOS;
-- View code: Abordagem programática para construção de interfaces de usuário, sem o uso de storyboards;
-- `UINavigationController`: Utilizado para navegação entre telas;
-- `UIButton, UIImageView, UILabel, UIStackView`: Componentes de interface de usuário para construção das telas.
-- `UITableView`: Componente para construção de tabelas.
-- `UITableViewDataSource`, `UITableViewDelegate`: Protocolos para construção de tabelas.
-- `UISearchBar`, `UISearchBarDelegate`: Componente e protocolo para construção de barras de pesquisa.
-- `UITableViewCell`: Construção de células para tabelas.
-- `URLSession`: Classe que permite requisições HTTP.
-- `Async/Await`: Funcionalidade que lida com operações assíncronas.
-- `Cocoapods`: Gerenciador de dependências.
+## ✔️ Técnicas e tecnologias utilizadas
 
-E muito mais! 
- 
+As técnicas e tecnologias utilizadas pra isso são:
+
+- `CardView`: container para apresentar cada produto na lista de produtos
+- `RecyclerView`: listagem das produtos
+- `ConstraintLayout`: ViewGroup padrão para implementar todos os layouts
+- `ImageView`: View para apresentar imagens no App
+- `Coil`: carregar imagens via requisição HTTP
+- `View Binding`: busca de views do layout de forma segura
+- `AlertDialog`: Exibição de formulário para carregar novas imagens do produto
+- `Fontes personalizadas`: configuração para adicionar novas fontes
+- `Extension functions`: adicionar comportamentos em outras classes para reutilizá-los
+- `Personalização de tema`: modificação de cores para o tema do App
+
+## 🎯 Desafio
+
+Tela de detalhes do produto
+
+![orgs-desafio-detalhes](https://user-images.githubusercontent.com/8989346/124600562-3a743e00-de3d-11eb-9d45-15e8a8d2976f.gif)
+
+[Você pode conferir o resultado do desafio neste commit](https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/commit/3188f27a627592715e7de62b6da450696e401f18).
+
 ## 📁 Acesso ao projeto
 
-Você pode [baixar o zip](https://github.com/alura-cursos/ios-view-code-requisicoes-http/archive/refs/heads/main.zip) com o código final do projeto ou [acessar o código fonte](https://github.com/alura-cursos/ios-view-code-requisicoes-http/).
+Você pode [acessar o código fonte do projeto inicial](https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/tree/projeto-inicial) ou [baixá-lo](https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/archive/refs/heads/projeto-inicial.zip).
 
 ## 🛠️ Abrir e rodar o projeto
 
-**Para executar este projeto, você precisa:**
+Após baixar o projeto, você pode abrir com o Android Studio. Para isso, na tela de launcher clique em:
 
-- Ter um macOS rodando em sua máquina.
-- Ter a IDE XCode instalada em sua máquina. Você pode baixar pela App Store ou no [site para desenvolvedores](https://developer.apple.com/download/all/) da Apple.
+- **Open an Existing Project** (ou alguma opção similar)
+- Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
+- Por fim clique em OK
 
-**Como executar o projeto?**
-
-Quando você realizar o download do projeto, deverá descompactar o arquivo e entrar na pasta descompactada. Dentro dessa pasta, haverá um arquivo com a extensão `.xcodeproj`, você deve dar duplo clique nesse arquivo, que abrirá diretamente no XCode. 
-
-Com o projeto aberto no XCode, você consegue visualizar todas as pastas e arquivos.
-
-Para rodar o seu projeto, você deve clicar no botão de play na parte superior do XCode. Você também pode alterar o simulador em que o aplicativo será exibido, e então, o projeto será aberto no simulador de sua preferência.
+O Android Studio deve executar algumas tasks do Gradle para configurar o projeto, aguarde até finalizar. Ao finalizar as tasks, você pode executar o App 🏆 
 
 ## 📚 Mais informações do curso
 
-Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://cursos.alura.com.br/course/ios-view-code-requisicoes-http) que desenvolve o projeto!
+Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://cursos.alura.com.br/course/android-kotlin-personalize-app) que desenvolve o projeto desde o começo!
+
