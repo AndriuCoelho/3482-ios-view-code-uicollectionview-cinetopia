@@ -54,5 +54,5 @@ Para rodar o seu projeto, você deve clicar no botão de play na parte superior 
 
 ## 📚 Mais informações do curso
 
-Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://cursos.alura.com.br/course/ios-view-code-requisicoes-http) que desenvolve o projeto!
+Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://cursos.alura.com.br/course/layouts-complexos-com-colecoes) que desenvolve o projeto!
 
