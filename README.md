@@ -24,6 +24,8 @@ A aplicação Cinetopia é um aplicativo iOS que exibe a lista de filmes com mai
 - `UINavigationController`: Utilizado para navegação entre telas;
 - `UIButton, UIImageView, UILabel, UIStackView`: Componentes de interface de usuário para construção das telas.
 - `UITableView`: Componente para construção de tabelas.
+- 'UICollectionView': Componente construção de coleções (horizontal e vertical) usado para mostrar os filmes favoritos.
+- 'UITabBarController': Menu inferior, que possibilita alternar entre telas e funcionalidades no projeto.
 - `UITableViewDataSource`, `UITableViewDelegate`: Protocolos para construção de tabelas.
 - `UISearchBar`, `UISearchBarDelegate`: Componente e protocolo para construção de barras de pesquisa.
 - `UITableViewCell`: Construção de células para tabelas.
